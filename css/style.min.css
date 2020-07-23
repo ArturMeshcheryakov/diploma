@@ -666,6 +666,17 @@ html#schelkovo .advantages .wrapper {
     animation-iteration-count: infinite
 }
 
+.menu__mobile-menu{
+    height: 75px;
+}
+
+.menu__mobile.fixed .top-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 @keyframes pulse {
     from {
         transform: scale3d(1, 1, 1)
@@ -928,14 +939,14 @@ header .head .call .btn {
 }
 
 header nav.top-menu {
-    z-index: 4444;
+    z-index: 1002;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 50px;
     background-color: #000;
     background-image: -webkit-gradient(linear, left top, right top, from(#230a16), to(#0c0b15));
-    background-image: linear-gradient(to right, #230a16 0%, #0c0b15 100%)
+    background-image: linear-gradient(to right, #230a16 0%, #0c0b15 100%);
 }
 
 header nav.top-menu .menu-button {
@@ -2333,6 +2344,17 @@ p.personal-data input[type=checkbox]:checked + label:before {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center
+    }
+
+    .menu__mobile-menu{
+        height: 60px;
+    }
+
+    .fixed-gift{
+        top: auto;
+        right: auto;
+        bottom: 20px;
+        left: 20px;
     }
 }
 

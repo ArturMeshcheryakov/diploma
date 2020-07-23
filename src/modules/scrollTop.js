@@ -24,7 +24,7 @@ const scrollTop = () => {
     backToTop();
   });
 
-  window.onscroll = totopShow;
+  window.addEventListener('scroll', totopShow);
 };
 
 export default scrollTop;
