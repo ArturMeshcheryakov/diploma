@@ -3,12 +3,6 @@ import scrollElem from './scrollElem'
 const menu = () => {
   const popupMenu = document.querySelector('.popup-menu');
   const menuMobile = document.querySelector('.menu__mobile');
-  /*  const width = document.documentElement.offsetWidth;
-
-   window.onresize = () => resizeWindow();
-   const resizeWindow = () => {
-   if (width < 768) console.log(1);
-   };*/
 
   const handlerMenu = () => popupMenu.classList.toggle('active');
 

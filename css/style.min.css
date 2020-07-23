@@ -655,6 +655,10 @@ html#schelkovo .advantages .wrapper {
     cursor: pointer
 }
 
+.fixed-gift.hide{
+    display: none;
+}
+
 .fixed-gift img {
     animation-name: pulse;
     animation-duration: 1s;
