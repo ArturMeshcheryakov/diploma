@@ -655,7 +655,7 @@ html#schelkovo .advantages .wrapper {
     cursor: pointer
 }
 
-.fixed-gift.hide{
+.fixed-gift.hide {
     display: none;
 }
 
@@ -666,11 +666,11 @@ html#schelkovo .advantages .wrapper {
     animation-iteration-count: infinite
 }
 
-.menu__mobile-menu{
+.menu__mobile-menu {
     height: 75px;
 }
 
-.menu__mobile.fixed .top-menu{
+.menu__mobile.fixed .top-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -851,7 +851,7 @@ header .head .club-select .clubs-list ul {
     text-align: center
 }
 
-header .head .club-select .clubs-list.active ul{
+header .head .club-select .clubs-list.active ul {
     display: block;
 }
 
@@ -1039,7 +1039,8 @@ nav.popup-menu {
     left: 0;
     top: 0
 }
-nav.popup-menu.active{
+
+nav.popup-menu.active {
     -webkit-display: flex;
     -moz-display: flex;
     -ms-display: flex;
@@ -1674,6 +1675,10 @@ nav.popup-menu .close-menu-btn img {
     left: -29px
 }
 
+.club.error input[type=radio]:not(checked) + label:before {
+    border: 2px solid red !important;
+}
+
 .club input[type=radio]:checked + label:before {
     content: url(../images/checked.png);
     width: 21px;
@@ -1907,7 +1912,7 @@ footer .footer-bottom .right .socials .social-icon:hover a {
     transition: all .4s ease;
 }
 
-#totop.active{
+#totop.active {
     right: 10px;
 }
 
@@ -2052,6 +2057,10 @@ p.personal-data input[type=checkbox]:not(checked) + label:before {
     position: absolute;
     top: -3px;
     left: -29px
+}
+
+.personal-data.error input[type=checkbox]:not(checked) + label:before {
+    border: 2px solid red !important;
 }
 
 p.personal-data input[type=checkbox]:checked + label:before {
@@ -2346,11 +2355,11 @@ p.personal-data input[type=checkbox]:checked + label:before {
         justify-content: center
     }
 
-    .menu__mobile-menu{
+    .menu__mobile-menu {
         height: 60px;
     }
 
-    .fixed-gift{
+    .fixed-gift {
         top: auto;
         right: auto;
         bottom: 20px;

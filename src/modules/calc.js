@@ -2,8 +2,8 @@ const calc = () => {
   const calcBlock = document.querySelector('.calc');
   const priceTotal = document.getElementById('price-total');
   const promocode = document.querySelector('.promocode');
-  const cardTypeFirst = document.querySelector('[name="card-type"]');
-  const cardNameFirst = document.querySelector('[name="club-name"]');
+  const cardTypeFirst = document.querySelector('.calc [name="card-type"]');
+  const cardNameFirst = document.querySelector('.calc [name="club-name"]');
   const price = {
     'mozaika': {
       '1': 1999,
@@ -95,11 +95,11 @@ const calc = () => {
 
     calcBlock.addEventListener('click', (event) => {
       const target = event.target;
-      const cardType = target.closest('[name="card-type"]');
-      const cardName = target.closest('[name="club-name"]');
+      const cardType = target.closest('.calc [name="card-type"]');
+      const cardName = target.closest('.calc [name="club-name"]');
 
-      if (cardType) priceShow(elemCheck('[name="club-name"]'), cardType.value);
-      if (cardName) priceShow(cardName.value, elemCheck('[name="card-type"]'));
+      if (cardType) priceShow(elemCheck('.calc [name="club-name"]'), cardType.value);
+      if (cardName) priceShow(cardName.value, elemCheck('.calc [name="card-type"]'));
     });
 
     let check = false;
