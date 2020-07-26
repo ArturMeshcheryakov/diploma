@@ -677,6 +677,84 @@ html#schelkovo .advantages .wrapper {
     width: 100%;
 }
 
+.js-slider {
+    position: relative;
+}
+
+.gallery-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.gallery-slider .slide-active {
+    position: relative;
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.main-slider .slide {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.main-slider .slide-active {
+    position: relative;
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.slider-dots {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    -khtml-display: flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -khtml-align-items: center;
+    align-items: center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 0 !important;
+    bottom: 30px !important;
+}
+
+.slider-dot {
+    width: 20px;
+    height: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    margin: 0 10px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.slider-dot.dot-active, .slider-dot:hover {
+    background-color: #ffd11a;
+}
+
 @keyframes pulse {
     from {
         transform: scale3d(1, 1, 1)
