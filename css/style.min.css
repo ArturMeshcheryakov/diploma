@@ -679,6 +679,21 @@ html#schelkovo .advantages .wrapper {
 
 .js-slider {
     position: relative;
+    overflow: hidden;
+}
+
+.js-slider-carousel{
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    -khtml-display: flex;
+    display: flex;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
 }
 
 .gallery-slider .slide {
