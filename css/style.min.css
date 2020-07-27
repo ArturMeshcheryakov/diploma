@@ -24,10 +24,6 @@ img, object, embed {
     max-width: 100%
 }
 
-html {
-    overflow-y: scroll
-}
-
 ul {
     list-style: none
 }
@@ -768,6 +764,10 @@ html#schelkovo .advantages .wrapper {
 
 .slider-dot.dot-active, .slider-dot:hover {
     background-color: #ffd11a;
+}
+
+.over_hide{
+    overflow-y: hidden;
 }
 
 @keyframes pulse {
